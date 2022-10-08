@@ -1,0 +1,276 @@
+*{
+    font-family: 'IBM Plex Sans', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color:  #F2F2F2;
+    background-image: url('./img/bg-main-mobile.png');
+    background-repeat: no-repeat;
+    background-position-x: -20px;
+    background-position-y: -250px;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+.bg{
+    display: none;
+}
+
+/* Mobile Styles */
+
+.header-cont{
+    padding: 39px 24px;
+}
+
+.header-cont h1{
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 64px;
+    margin-bottom: 20px;
+}
+
+.header-cont p{
+    font-weight: 400;
+    margin-bottom: 100px;
+}
+
+.app-mobile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('./img/bg-pattern-2.svg');
+    background-color: #191826;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 12px;
+    height: 60vh;
+}
+
+.app-mobile img{
+    width: 208px;
+    height: 430px;
+    margin-top: -200px;
+}
+
+.info{
+    padding: 48px 36px;
+    background-color: #FA7453;
+    margin-top: -20px;
+    border-radius: 12px;
+    color: white;
+}
+
+.info h2{
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.info p{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 36px;
+}
+
+.price{
+    display: flex;
+    align-items: center;
+    
+}
+
+.price p{
+    font-size: 65px;
+    font-weight: 700;
+}
+
+.price span{
+    margin-left: 16px;
+    margin-bottom: 30px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+.ios-btn{
+    width: 100%;
+    background-color: #191826;
+    border: none;
+    margin-bottom: 16px;
+    height: 61px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 700;
+    color: #FCFAF9;
+    cursor: pointer;
+    transition: 0.8s ease-out;
+}
+.ios-btn img,
+.andoid-btn img{
+    margin-right: 8px;
+}
+
+.andoid-btn{
+    width: 100%;
+    background-color: #FCFAF9;
+    border: none;
+    height: 61px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.8s ease-out;
+}
+
+.logo{
+    margin-top: 63px;
+    margin-bottom: 32px;
+    padding-left: 25px;
+}
+
+footer{
+    padding: 0 24px;
+}
+
+footer p{
+    font-weight: 400;
+}
+
+footer span{
+    font-weight: 700;
+}
+
+.footer-icons{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 64px;
+    margin-bottom: 80px;
+}
+
+.footer-icons img{
+    cursor: pointer;
+    transition: 0.1s ease-out;
+}
+
+.footer-icons img:hover{
+    filter: brightness(0) saturate(100%) invert(58%) sepia(68%) saturate(1804%) hue-rotate(326deg) brightness(99%) contrast(97%);
+}
+
+/* Tablet Styles */
+@media(min-width:768px){
+    body{
+        padding:39px;
+        background-image: url('./img/bg-main-tablet.png');
+        background-repeat: no-repeat;
+        background-position-x: -440px;
+    }
+    .header-cont{
+        padding: 0;
+        margin-bottom: 350px;
+    }
+    .bg{
+        display: block;
+        position: absolute;
+        top: -3%;
+        right: -3%;
+        width: 21%;
+    }
+    .header-cont h1{
+        font-size: 64px;
+        padding-right: 60px;
+        margin-top: 94px;
+        margin-bottom: 28px;
+    }
+    .header-cont p{
+        width: 512px;
+        
+    }
+    .info{
+        width: 310px;
+        margin-left: 204px;
+        margin-top: -269px;
+        z-index: 0;
+        position: relative;
+    }
+    .app-mobile img{
+        width: 270px;
+        height: 546px;
+        margin-top: -294px;
+        margin-left: -350px;
+    }
+    .logo{
+        margin-top: 88px;
+    }
+    footer{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .footer-text{
+        width: 50%;
+    }
+    .footer-icons{
+        width: 20%;
+    }
+}
+
+/* Desktop Styles */
+
+@media(min-width:1200px){
+    body{
+        padding: 45px 150px;
+        background-image: url('./img/bg-main-desktop.png');
+        background-repeat: no-repeat;
+        background-position-x: -440px;
+    }
+    .bg{
+        top: -4%;
+        right: 0;
+    }
+    .header-cont h1{
+        font-size: 80px;
+        padding-right: 100px;
+        width: 80%;
+        margin-bottom: 40px;
+    }
+
+    .header-cont p{
+        font-size: 20px;
+        width: 60%;
+    }
+    .info{
+        margin-top: -438px;
+        margin-left: 680px;
+    }
+    .app-mobile img{
+        margin-left: -428px;
+        width: 280px;
+        height: 606px;
+        margin-top: -328px;
+    }
+    .app-mobile{
+        background-position-y:-40px ;
+        height: 75vh;
+    }
+}
+
+/* Hovers */
+
+.ios-btn:hover{
+    background-color: #66E2DC;
+}
+
+.andoid-btn:hover{
+    background-color: #FFB964;
+}
